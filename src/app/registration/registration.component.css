@@ -1,0 +1,95 @@
+
+button {
+    background-color: #67c7c3;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #d634ae;
+}
+input[type="text"], input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #54ae65;
+    border-radius: 5px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.register {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+
+
+
+    
+    margin: 0  50vh;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+     /* Adjust to your desired height */
+    
+}
+
+select {
+    padding: 8px; /* Padding around the text and arrow */
+    font-size: 16px; /* Font size */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #fff; /* Background color */
+    appearance: none; /* Removes default arrow in some browsers */
+    /* Add other styles as needed */
+}
+select:hover,
+select:focus {
+    border-color: #666; /* Border color on hover/focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+/* Style the arrow */
+select::after {
+    content: '\25BC'; /* Unicode for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust as needed */
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevents the arrow from being clickable */
+    color: #666; /* Arrow color */
+}
+/* Style options */
+select option {
+    font-size: 14px;
+    padding: 8px 12px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hover and selected options */
+select option:hover,
+select option:checked {
+    background-color: #f0f0f0;
+}
+
+.center-div {
+    display: grid;
+    place-items: center; /* Center horizontally and vertically */
+    /* height: 100vh; Adjust to your desired height */
+}

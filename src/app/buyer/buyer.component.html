@@ -1,0 +1,21 @@
+<p>buyer works!</p>
+<div class="buyer-container">
+
+<button (click)="changeWhatToShow(2)">Category</button>
+
+<div *ngIf="whatToShow==2">
+    <app-showproducts></app-showproducts>
+</div>
+
+<button (click)="changeWhatToShow(1)">Cart</button>
+<div *ngIf="whatToShow == 1">
+    <app-cart></app-cart> </div>
+
+<button (click) ="changeWhatToShow(3) ">History</button>
+<div *ngIf="whatToShow==3">
+    <app-history></app-history>
+</div>
+
+   
+<button (click)="logout()">Logout</button>
+</div>

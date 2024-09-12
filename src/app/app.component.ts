@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'julyamazon';
+  baseUrl='http://localhost:8080/'
+  id:number=0;
+  whatToShow:number=0;
 }

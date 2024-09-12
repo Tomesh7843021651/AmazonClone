@@ -1,0 +1,21 @@
+<p>registration works!</p>
+
+<div class="center-div">
+    <div class="register">
+
+Name: <input type="text" [(ngModel)]="name"><br>
+<!-- email: <input type="text" [(ngModel)]="email"><br> -->
+username: <input type="text" [(ngModel)]="username"><br>
+password: <input type="text" [(ngModel)]="password"><br>
+Account type: <select [(ngModel)]="accounttype">
+    
+    <option   [value]="2">seller</option>
+    <option  [value]="3">buyer</option>
+</select><br>
+
+<button (click)="register()">Register</button>
+<br>
+<button (click)="logout()">Login</button>
+
+</div>
+</div>
